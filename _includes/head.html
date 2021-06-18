@@ -12,14 +12,14 @@
   rel="stylesheet"
 />
 
-<link rel="stylesheet" href="{{ "/assets/styles.css" | prepend:site.baseurl | prepend:site.context }}">
+<link rel="stylesheet" href="{{ "/assets/styles.css" | prepend:site.baseurl | prepend:site.project_url }}">
 
 <link
   rel="canonical"
   href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
 />
 
-<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend:site.baseurl | prepend:site.context }}" />
+<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend:site.baseurl | prepend:site.project_url }}" />
 
 <title>
   {% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}
